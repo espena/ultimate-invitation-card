@@ -1,0 +1,42 @@
+{
+	"folders": [
+    {
+      "path": "."
+    },
+    {
+      "path": "../../../privat/50.espena.no"
+    }
+  ],
+  "settings": {
+    "files.associations": {
+      "*.embeddedhtml": "html",
+      "*.blade.php": "html",
+      "*.tpl": "plaintext",
+      "__hash_table": "cpp",
+      "__split_buffer": "cpp",
+      "__tree": "cpp",
+      "array": "cpp",
+      "bitset": "cpp",
+      "deque": "cpp",
+      "forward_list": "cpp",
+      "initializer_list": "cpp",
+      "list": "cpp",
+      "map": "cpp",
+      "regex": "cpp",
+      "set": "cpp",
+      "string": "cpp",
+      "string_view": "cpp",
+      "unordered_map": "cpp",
+      "unordered_set": "cpp",
+      "vector": "cpp",
+      "atomic": "cpp",
+      "ios": "cpp",
+      "system_error": "cpp",
+      "complex": "cpp",
+      "random": "cpp",
+      "iosfwd": "cpp",
+      "stdexcept": "cpp"
+    },
+    "git.ignoreLimitWarning": true
+  }
+}

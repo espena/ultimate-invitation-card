@@ -1,0 +1,7 @@
+.DS_Store
+firmware/**/build
+hardware/ultimate-invitation-card-backups
+\#auto_saved_files\#
+_autosave*
+/graphics
+/workspace

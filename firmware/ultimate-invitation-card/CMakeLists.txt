@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.16)
+add_compile_definitions(P13N_PER)
+include($ENV{IDF_PATH}/tools/cmake/project.cmake)
+project(ultimate-invitation-card)
+include_directories(components/**/)

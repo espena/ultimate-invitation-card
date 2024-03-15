@@ -1,0 +1,115 @@
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Courier, monospace;
+  color: #fff;
+  background-color: #000;
+}
+#espen50 {
+  &.hide {
+    display: none;
+  }
+  position: relative;
+  margin: auto;
+  max-width: 500px;
+  padding: 25px;
+  h1 {
+    color: #a37e14;
+  }
+  p, h1 {
+    z-index: 10;
+  }
+  img.pcb {
+    z-index: 0;
+    position: absolute;
+    width: 35%;
+    max-width: 400px;
+    height: auto;
+    top: 100px;
+    right: 15px;
+    bottom: auto;
+    left: auto;
+  }  
+}
+#terminal {
+  width: 60%;
+  color: #0ba30b;
+  .line {
+    min-height: 10px;
+    &:last-child::after {
+      content: ' ';
+      position: relative;
+      display: inline-block;
+      width: 8px;
+      height: 13px;
+      top: 1px;
+      background-color: #0ba30b;
+      animation: blink 1s infinite;
+    }
+    &.emphasized {
+      color: #fff;
+    }
+    &.clickable {
+      cursor: pointer;
+      text-decoration: underline;
+      font-style: italic;
+      color: #999;
+      font-weight: normal !important;
+      &::before, &::after {
+        display: inline-block;
+        color: #0ba30b;
+        font-style: normal;
+        font-weight: bold;
+        background-color: #000;
+        text-decoration: none !important;
+      }
+      &::before {
+        content: '[';
+        padding-right: 3px;
+      }
+      &::after {
+        content: ']';
+        padding-left: 3px;
+      }      
+    }
+    &.listitem {
+      white-space: nowrap;
+      display: block;
+      border-radius: 3px;
+      color: #fff;
+      margin-top: 5px;
+      padding-bottom: 3px;
+      padding-top: 2px;
+      text-decoration: underline;
+      z-index: 9999;
+      &:hover {
+        background-color: #0a6e0a;
+      }
+      &:first-child {
+        margin-top: 25px;
+      }
+      &:last-child {
+        margin-bottom: 10px;
+      }
+      &:before {
+        display: inline-block;
+        position: relative;
+        top: 2px;
+        padding-right: 5px;
+        content: '*';
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+/*!*****************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/resolve-url-loader/index.js!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[4]!./src/main.scss ***!
+  \*****************************************************************************************************************************************************************************************************************************************************/
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  color: #fff;
+  background-color: #000;
+}
+
+#espen50 {
+  position: relative;
+  margin: auto;
+  max-width: 500px;
+  background-image: url(7bd6d5a84e5b13d3fbed.png);
+  padding: 30px;
+}
+#espen50 p, #espen50 h1 {
+  z-index: 10;
+}
+#espen50 img.pcb {
+  position: absolute;
+  width: 50%;
+  height: auto;
+  top: 30px;
+  right: 20px;
+  bottom: auto;
+  left: auto;
+}

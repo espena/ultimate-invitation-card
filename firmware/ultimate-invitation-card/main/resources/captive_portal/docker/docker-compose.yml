@@ -1,0 +1,9 @@
+version: '3'
+services:
+  node:
+    image: node
+    container_name: builder
+    volumes:
+      - ../../:/srv
+    working_dir: /srv
+    command: [ "tail", "-f", "/dev/null" ]
